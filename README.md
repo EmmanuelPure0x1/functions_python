@@ -7,6 +7,7 @@
     - isalpha()
     - lower()
     - capitalize()
+    - etc ...
     
 ## Why are they Useful?
 
