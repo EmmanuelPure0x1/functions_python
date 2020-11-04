@@ -42,33 +42,41 @@ add(4,9)
 # Substract function
 
 def subs(num1, num2, num3):
-    print(num1 - num2 - num3)
+    return(num1 - num2 - num3)
 
 subs(456486498,41564864,4561321586)
 
-# declaring the argument name outside the function wilkl have no effect on the function
+# declaring the argument name outside the function will have no effect on the function
 num1 = 1
 
 # Create a function to multiply (*)
 def multip(num1, num2):
-# arguments called in function are multiplied within the print statement
-    print(num1*num2)
-multip(2,2)
+# arguments called in function are multiplied within the return statement
+    return(num1*num2)
+
 
 # Create a function to divide (/)
 def divide(num1, num2):
-# arguments called in function are divided within the print statement
-    print(num1/num2)
-divide(2,2)
+# arguments called in function are divided within the return statement
+    return(num1/num2)
+
 
 # Create a function to modulo (%)
 def modulo(num1, num2):
-# remainder of the division of both args printed
-    print(num1%num2)
-modulo(2,2)
+# remainder of the division of both args returned
+    return(num1%num2)
+
 
 # Create a function to the power squared
 def powers(num):
-# argument passed is square rooted within print statement
-    print(num**2)
-powers(12)
+# argument passed is square rooted within return statement
+    return(num**2)
+
+'''Return statement give us more control over our function due to the nature of having to actually call 
+the function rather than just passing args. Returning a function requires the code to be called as displayed below'''
+
+# function calls
+print(multip(2,2))
+print(divide(2,2))
+print(modulo(2,2))
+print(powers(5))
